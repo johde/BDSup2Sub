@@ -48,6 +48,38 @@ public enum Resolution {
             return new int[]{720, 576};
         }
     },
+    P480 {
+        @Override
+        public String toString() {
+            return "480p (854x480)";
+        }
+
+        @Override
+        public String getResolutionNameForXml() {
+            return "480p";
+        }
+
+        @Override
+        public int[] getDimensions() {
+            return new int[]{854, 480};
+        }
+    },
+    P576 {
+        @Override
+        public String toString() {
+            return "576p (1024x576)";
+        }
+
+        @Override
+        public String getResolutionNameForXml() {
+            return "576p";
+        }
+
+        @Override
+        public int[] getDimensions() {
+            return new int[]{1024, 576};
+        }
+    },
     HD_720 {
         @Override
         public String toString() {
